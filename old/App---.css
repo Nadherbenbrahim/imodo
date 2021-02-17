@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+p,span,label,a,input,textarea {
+  font-family:"Roboto";
+  color: rgba(45, 47, 57, 1);
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+h1,h2,h3,h4,h5,button {
+  font-family:"Poppins";
+  color: rgba(45, 47, 57, 1);
+}
+.profile img {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile svg.arrowSvg{
+  transform: translate(8px, -20px);
+  cursor: pointer;
+}
+.profile li {
+  cursor: pointer;
+    list-style: none;
+    position: absolute;
+    left: -50px;
+    background: #fff;
+    padding: 10px 20px;
+    width: 56px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px lightgrey;
+    font-family: "roboto";
+}
+.menuLinks a.selected span{
+  color: #E5017D !important;
+}
+a.selected svg{
+  fill: #E5017D !important;
+}
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+
+}
+.menuLinks a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.menuLinks a span, .links a {
+  font-size: 18px;
+  color: #818E94;
+  margin-left:10px;
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+.profile {
+  margin-right: 30px;
+  position: relative;
+}
+.links{
+  margin-left: 30px;
+}
+.links a {
+  font-size: 16px;
+  margin-left: 30px;
+}
+.pagecarts{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagecarts > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 250px;
+  margin-right: 30px;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+}
+.avgN{
+  padding: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avgN > div {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.avgN h3 {
+  font-size: 18px;
+  color: #818E94;
+}
+.avgN span {
+  font-size: 56px;
+  font-weight: bold;
+}
+.pagecarts button {
+    background: #fff;
+    padding: 5px 10px;
+    font-family: 'Roboto';
+    border: none;
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+.wizardLink {
+     transform: translateX(-20px);
+}
+
+table {
+      padding: 20px 30px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    border-collapse: collapse;
+       
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+th {
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(28,28,27,1);
+    height: 30px;
+}
+td {
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(77,79,92,1);
+}
+tr {
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.entityTable tbody td:nth-child(3) {
+  text-align: right;
+}
+
+.entityTable tbody td:nth-child(2) {
+  text-align: center;
+}
+
+.entityTitle{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(75,79,86,1);
+}
+
+#addEntity, .entityNameUpdate{
+      border-radius: 6px;
+    outline: none;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.051));
+    width: 209px;
+    height: 37px;
+    border-width: 1.5px;
+    padding-left: 10px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+#addEntity + button {
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin-left: 10px;
+  height: 42px;
+  outline: none;
+}
+
+.entitys {
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(129, 142, 148);
+    background: rgb(228, 230, 235);
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px 35px 5px 20px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.entitys svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.addSyn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(129, 142, 148);
+    background: transparent;
+    border: 1px dashed;
+    border-radius: 10px;
+    padding: 6.5px 0px 6.5px 40px;
+    position: relative;
+    outline: none;
+}
+.addSynForm {
+  position: relative;
+  margin: 15px 0;
+}
+.addSynForm svg {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.addSyn svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+
+.btn {
+  color: #E5007D;
+    border: 2px solid #E5007D;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+}
+.entityHoverd:hover {
+ background: navajowhite;
+}
+.loaderStyle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.facebookbtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #E5137D;
+}
+
+.facebookbtn span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.entityName:hover {
+  color: #E5137D;  
+}
+
+input[type="radio"]{
+  height: 25px;
+  width: 25px;
+}
+svg {
+  cursor: pointer;
+  outline: none;
+}
+
+.agentContainer{
+  position: relative;
+}
+
+#root > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:nth-child(1) > svg:hover > g, 
+#root > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:nth-child(4) > svg:hover > g {
+    fill: #E5007D;
+    stroke: #fff;
+}
+
+#root > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:nth-child(1) > svg:hover > g + text > tspan,
+#root > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a:nth-child(4) > svg:hover > g+ text > tspan {
+    fill: #fff;
+}
+
+.step3  .popup-content  {
+  width: 30% !important;
+}
+.facebookAncre:hover + span {
+  display: inline-block !important;
+}
+
+.hoverLIst:hover {
+  background: beige
+}

@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /etc/letsencrypt/live/imodo.ai/privkey.pem /etc/letsencrypt/live/imodo.ai/fullchain.pem > node_modules/webpack-dev-server/ssl/server.pem
